@@ -13,7 +13,7 @@
 <body>
     <header id="up">
       <div class="header-wrapper">
-        <a href="#"><img src="img\logo.svg" alt=""></a>
+        <a href="#"><img src="img\logo.svg" alt="UberEats logo"></a>
 
         <div class="header__delivery-form">
           <form class="delivery" action="#">
@@ -22,13 +22,13 @@
                 <option value="plan">Запланировать заказ</option>
               </select>
               <span class="delivery__span"> Куда: </span>
-              <input type="text" name="adress" class="delivery__adress" id="adress" placeholder="ул. Тарасовская, 16">
+              <input type="text" name="delivery-adress" class="delivery__adress" placeholder="ул. Тарасовская, 16">
           </form>
         </div>
         <nav class="buttons">
           <a href="#" class="buttons__button buttons__sing-in-button">Войти</a>
           <a href="#" class="buttons__button buttons__register-button">Регистрация</a>
-          <a href="#" class="buttons__basket-button"><img src="./img/basket.svg" alt=""></a>
+          <a href="#" class="buttons__basket-button"><img src="./img/basket.svg" alt="basket"></a>
         </nav>
       </div>
     </header>
@@ -37,7 +37,7 @@
       <form action="#" class="search-field">
         <input 
         type="search" 
-        name="restaurant-search" 
+        name="restaurant-search-field" 
         class="restaurant-search" 
         placeholder="Искать ресторан или кухню">
       </form>
@@ -50,10 +50,10 @@
             <option value="plan">Запланировать заказ</option>
           </select>
           <span class="delivery__span">Кому</span>
-          <input type="text" name="adress" class="delivery__adress" id="adress" placeholder="ул. Тарасовская, 16">
+          <input type="text" name="delivery-adress" class="delivery__adress" id="adress" placeholder="ул. Тарасовская, 16">
         </form>
       </div>
-      <h2>Киевские рестораны</h2>
+      <h1>Киевские рестораны</h1>
       <section class="card-list">
 
         <article class="card">
@@ -124,13 +124,13 @@
     <footer>
       <div class="footer">
         <section class="footer__logo">
-          <a href="#"><img src="img\white-logo.svg" alt="logo"></a>
+          <a href="#"><img src="img\white-logo.svg" alt="UberEats logo"></a>
         </section>
 
         <section class="footer__links">
           <div class="footer__lang-and-social">
             <form action="#" class="footer__lang">
-              <select class="footer__lang-select">
+              <select class="footer__lang-select" name="language-selection">
                 <option value="english">english</option>
                 <option value="rusian" selected>русский</option>
                 <option value="ukrainian">українська</option>
@@ -143,17 +143,17 @@
               <ul class="footer__social-networks footer__lists">
                 <li>
                   <a href="https://www.facebook.com/UberEatsUA/?brand_redir=696009167187917">
-                    <img src="./img/facebook.svg" alt="facebook-logo" class="footer__social-networks-logo">
+                    <img src="./img/facebook.svg" alt="link to facebook page of UberEats" class="footer__social-networks-logo">
                   </a>
                 </li>
                 <li>
                   <a href="https://mobile.twitter.com/ubereats">
-                    <img src="./img/twitter.svg" alt="twitter-logo" class="footer__social-networks-logo">
+                    <img src="./img/twitter.svg" alt="link to twitter page of UberEats" class="footer__social-networks-logo">
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/ubereats/">
-                    <img src="./img/instagram.svg" alt="instagram-logo" class="footer__social-networks-logo">
+                    <img src="./img/instagram.svg" alt="link to instagram page of UberEats" class="footer__social-networks-logo">
                   </a>
                 </li>
               </ul>
@@ -217,7 +217,7 @@
             </ul>
         </section>
         
-        <section>
+        <div>
           <ul class="footer__policy footer__lists">
             <li class="footer__policy-paragraph">
               © 2019 Uber Technologies Inc.
@@ -238,7 +238,7 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
       </div>
     </footer>
 </body>
