@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="UberEats project">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UberEats</title>
@@ -13,16 +14,18 @@
 <body>
     <header id="up">
       <div class="header-wrapper">
-        <a href="#"><img src="img\logo.svg" alt="UberEats logo"></a>
+        <a href="#"><img src="img\logo.svg" alt="Uber Eats"></a>
 
         <div class="header__delivery-form">
           <form class="delivery" action="#">
-              <select name="order-time" id="time" class="delivery__time">
+              <select name="order-time" aria-label="select delivery time" class="delivery__time">
                 <option value="now" selected>Сейчас</option>
                 <option value="plan">Запланировать заказ</option>
               </select>
+
               <span class="delivery__span"> Куда: </span>
-              <input type="text" name="delivery-adress" class="delivery__adress" placeholder="ул. Тарасовская, 16">
+
+              <input type="text" name="delivery-adress" aria-label="choose delivery adress" class="delivery__adress" placeholder="ул. Тарасовская, 16">
           </form>
         </div>
         <nav class="buttons">
@@ -38,6 +41,7 @@
         <input 
         type="search" 
         name="restaurant-search-field" 
+        aria-label="restaurant search field"
         class="restaurant-search" 
         placeholder="Искать ресторан или кухню">
       </form>
@@ -45,92 +49,100 @@
       <div class="main__delivery-form">
         <form class="delivery" action="#">
           <span class="delivery__span">Когда</span>
-          <select name="order-time" id="time" class="delivery__time">
+
+          <select name="order-time" aria-label="select delivery time" class="delivery__time">
             <option value="now" selected>Сейчас</option>
             <option value="plan">Запланировать заказ</option>
           </select>
+
           <span class="delivery__span">Кому</span>
-          <input type="text" name="delivery-adress" class="delivery__adress" id="adress" placeholder="ул. Тарасовская, 16">
+
+          <input type="text" 
+          name="delivery-adress" 
+          class="delivery__adress" 
+          aria-label="choose delivery adress" 
+          placeholder="ул. Тарасовская, 16">
         </form>
       </div>
       <h1>Киевские рестораны</h1>
-      <section class="card-list">
+
+      <div class="card-list">
 
         <article class="card">
           <a href="#"><img src="./img/1-4.png" alt="fast food" class="card__picture"></a>
-          <h3 class="card__title">Макдоналдс</h3>
+          <h2 class="card__title">Макдоналдс</h2>
           <div class="card__tags">₴₴ • Бургеры</div>
           <div>25-35 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/1-5.png" alt="asian food" class="card__picture"></a>
-          <h3 class="card__title">WOKWEI</h3>
+          <h2 class="card__title">WOKWEI</h2>
           <div class="card__tags">₴ • Китайская • Азиатская</div>
           <div>40-50 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/1-3.png" alt="street food" class="card__picture"></a>
-          <h3 class="card__title">YIZHA</h3>
+          <h2 class="card__title">YIZHA</h2>
           <div class="card__tags">₴₴ • Американская • Бургеры • Уличная еда</div>
           <div>35-45 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/1-2.png" alt="Near East food" class="card__picture"></a>
-          <h3 class="card__title">Musafir (ул. Саксаганского)</h3>
+          <h2 class="card__title">Musafir (ул. Саксаганского)</h2>
           <div class="card__tags">₴₴ • Близковосточная</div>
           <div>30-40 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/1-1.png" alt="asian food" class="card__picture"></a>
-          <h3 class="card__title">НЯ-NHA</h3>
+          <h2 class="card__title">НЯ-NHA</h2>
           <div class="card__tags">₴ • Китайская • Азиатская</div>
           <div>40-50 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/photo-2.png" alt="dessert" class="card__picture"></a>
-          <h3 class="card__title">Milk Bar</h3>
+          <h2 class="card__title">Milk Bar</h2>
           <div class="card__tags">₴₴ • Десерты • Европейская</div>
           <div>25-35 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/1.png" alt="pizza" class="card__picture"></a>
-          <h3 class="card__title">Mimosa Brooklyn Pizza</h3>
+          <h2 class="card__title">Mimosa Brooklyn Pizza</h2>
           <div class="card__tags">₴₴ • Итальянская • Пицца • Американская</div>
           <div>15-25 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/1-5.png" alt="asian food" class="card__picture"></a>
-          <h3 class="card__title">To Be</h3>
+          <h2 class="card__title">To Be</h2>
           <div class="card__tags">₴₴ • Японская • Азиатская • Суши</div>
           <div>25-35 Min</div>
         </article>
 
         <article class="card">
           <a href="#"><img src="./img/photo-1.png" alt="european food" class="card__picture"></a>
-          <h3 class="card__title">Druzi Cafe (ул. Прорезная)</h3>
+          <h2 class="card__title">Druzi Cafe (ул. Прорезная)</h2>
           <div class="card__tags">₴₴ • Американская • Современная европейская</div>
           <div>30-40 Min</div>
         </article>
-      </section>
+      </div>
     </main>
 
     <footer>
       <div class="footer">
-        <section class="footer__logo">
-          <a href="#"><img src="img\white-logo.svg" alt="UberEats logo"></a>
-        </section>
+        <div class="footer__logo">
+          <a href="#"><img src="img\white-logo.svg" alt="UberEats"></a>
+        </div>
 
-        <section class="footer__links">
+        <div class="footer__links">
           <div class="footer__lang-and-social">
             <form action="#" class="footer__lang">
-              <select class="footer__lang-select" name="language-selection">
+              <select class="footer__lang-select" aria-label="select language" name="language-select">
                 <option value="english">english</option>
                 <option value="rusian" selected>русский</option>
                 <option value="ukrainian">українська</option>
@@ -143,17 +155,17 @@
               <ul class="footer__social-networks footer__lists">
                 <li>
                   <a href="https://www.facebook.com/UberEatsUA/?brand_redir=696009167187917">
-                    <img src="./img/facebook.svg" alt="link to facebook page of UberEats" class="footer__social-networks-logo">
+                    <img src="./img/facebook.svg" alt="link to UberEats' facebook page" class="footer__social-networks-logo">
                   </a>
                 </li>
                 <li>
                   <a href="https://mobile.twitter.com/ubereats">
-                    <img src="./img/twitter.svg" alt="link to twitter page of UberEats" class="footer__social-networks-logo">
+                    <img src="./img/twitter.svg" alt="link to UberEats' twitter page" class="footer__social-networks-logo">
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/ubereats/">
-                    <img src="./img/instagram.svg" alt="link to instagram page of UberEats" class="footer__social-networks-logo">
+                    <img src="./img/instagram.svg" alt="link to UberEats' instagram page" class="footer__social-networks-logo">
                   </a>
                 </li>
               </ul>
@@ -197,9 +209,9 @@
                 </li>
             </ul>
           </nav>
-        </section>
+        </div>
 
-        <section>
+        <div>
             <ul class="footer__apps">
               <li>
                 <a 
@@ -215,7 +227,7 @@
                 </a>
               </li>
             </ul>
-        </section>
+        </div>
         
         <div>
           <ul class="footer__policy footer__lists">
